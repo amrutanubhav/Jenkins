@@ -16,7 +16,13 @@ pipeline {
 
         stage('three') {
             steps {
-                echo "stage three"
+                sh '''
+
+                  echo hello world
+                  echo hi world
+                  echo bye world
+
+                '''
             }
         }
     }
