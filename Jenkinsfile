@@ -30,6 +30,7 @@ pipeline {
                   echo hello world
                   echo hi world
                   echo bye world
+                  env
 
                 '''
             }
