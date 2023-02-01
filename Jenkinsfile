@@ -44,7 +44,7 @@ pipeline {
              when { 
                 // branch 'develop'
                 // changeset "**/*.js"
-                environment name: 'CHOICE', value: 'two'
+                environment name: 'CHOICE', value: 'Two'
                 }
             steps {
                 echo "stage one"
