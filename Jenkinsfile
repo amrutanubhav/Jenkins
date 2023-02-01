@@ -14,8 +14,8 @@ pipeline {
         timeout(time: 1, unit: 'MINUTES')
     }
 
-    tools {
-        maven 'apache-maven-381'             // tools must be predefined in manage jenkins : maven jdk gradel
+    // tools {
+    //     maven 'apache-maven-381'             // tools must be predefined in manage jenkins : maven jdk gradel
 
     }
 
@@ -40,13 +40,13 @@ pipeline {
     
     stages {
         stage('One') {    
-             when { 
-                branch 'develop' 
-                }
+            //  when { 
+            //     branch 'develop' 
+            //     }
             steps {
                 echo "stage one"
                 echo "environment url is ${ENV_URL}"
-                sh "mvn --version"
+                // sh "mvn --version"
             }
         }
 
