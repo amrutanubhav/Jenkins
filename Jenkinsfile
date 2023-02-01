@@ -32,7 +32,11 @@ pipeline {
             password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
             
         }
-    triggers { cron('H */4 * * 1-5') }
+    triggers { 
+        cron('H */4 * * 1-5')
+        // pollSCM('H */4 * * 1-5')
+        }
+
     
     stages {
         stage('One') {    
