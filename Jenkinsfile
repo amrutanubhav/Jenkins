@@ -15,7 +15,7 @@ pipeline {
     }
 
     tools {
-        maven 'apache-maven-381'             // tools must be predefined in manage jenkins : maven jdk gradel
+        maven 'mvn-381'             // tools must be predefined in manage jenkins : maven jdk gradel
 
     }
 
