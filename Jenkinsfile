@@ -44,12 +44,13 @@ pipeline {
              when { 
                 // branch 'develop'
                 // changeset "**/*.js"
-                environment name: 'CHOICE', value: 'Three'
+                environment name: 'CHOICE', value: 'two'
                 }
             steps {
                 echo "stage one"
                 echo "environment url is ${ENV_URL}"
                 sh "mvn --version"
+                sh "hostname"
             }
         }
 
