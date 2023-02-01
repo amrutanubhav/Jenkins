@@ -12,6 +12,7 @@ pipeline {
         disableConcurrentBuilds()
         disableResume()
         timeout(time: 1, unit: 'MINUTES')
+    }
 
     tools {
         maven 'apache-maven-3.0.1'             // tools must be predefined in manage jenkins : maven jdk gradel
@@ -35,9 +36,9 @@ pipeline {
     
     stages {
         stage('One') {    
-            //  when { 
-            //     branch 'develop' 
-            //     }
+             when { 
+                branch 'develop' 
+                }
             steps {
                 echo "stage one"
                 echo "environment url is ${ENV_URL}"
