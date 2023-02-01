@@ -41,9 +41,9 @@ pipeline {
     
     stages {
         stage('One') {    
-            //  when { 
-            //     branch 'develop' 
-            //     }
+             when { 
+                branch 'develop' 
+                }
             steps {
                 echo "stage one"
                 echo "environment url is ${ENV_URL}"
