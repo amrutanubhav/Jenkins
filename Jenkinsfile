@@ -17,7 +17,7 @@ pipeline {
     // tools {
     //     maven 'apache-maven-381'             // tools must be predefined in manage jenkins : maven jdk gradel
 
-    }
+    // }
 
     parameters {
 
@@ -33,6 +33,7 @@ pipeline {
             
         }
     triggers { 
+        
         cron('H */4 * * 1-5')
         // pollSCM('H */4 * * 1-5')
         }
