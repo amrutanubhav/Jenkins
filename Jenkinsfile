@@ -13,6 +13,9 @@ pipeline {
         disableResume()
         timeout(time: 1, unit: 'MINUTES')
 
+    tools {
+        maven 'apache-maven-3.0.1'             // tools must be predefined in manage jenkins : maven jdk gradel
+
     }
 
     parameters {
@@ -28,7 +31,8 @@ pipeline {
             password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
             
         }
-
+    triggers { cron('H */4 * * 1-5') }
+    
     stages {
         stage('One') {     
             steps {
