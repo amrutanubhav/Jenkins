@@ -1,6 +1,6 @@
 pipeline {
     agent {    // we can define agents by labels  <<manage jenkins > nodes > configure a new ec2 instance and set it as an agent . This pipeline runs on the agent based on the label here>>
-        label 'ANSIBLE'
+        label 'ANSIBLE' //agent should have java installed 
     }
 
     environment {
