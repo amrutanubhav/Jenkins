@@ -42,8 +42,8 @@ pipeline {
     stages {
         stage('One') {    
              when { 
-                branch 'develop'
-                changeset "**/*.js"
+                // branch 'develop'
+                // changeset "**/*.js"
                 environment name: 'CHOICE', value: 'Three'
                 }
             steps {
