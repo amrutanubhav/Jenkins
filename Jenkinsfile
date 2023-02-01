@@ -42,6 +42,8 @@ pipeline {
 
     
     stages {
+       stage('Parallel-stage') {
+        parallel { 
         stage('One') {    
              when { 
                 // branch 'develop'
@@ -79,4 +81,4 @@ pipeline {
             }
         }
     }
-}
+}}}
