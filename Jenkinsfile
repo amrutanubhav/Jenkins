@@ -42,7 +42,9 @@ pipeline {
     stages {
         stage('One') {    
              when { 
-                branch 'develop' 
+                branch 'develop'
+                changeset "**/*.js"
+                environment name: 'CHOICE', value: 'Three'
                 }
             steps {
                 echo "stage one"
