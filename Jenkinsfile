@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'ANSIBLE'
+    }
 
     environment {
         ENV_URL = "pipeline.global.com"  //declaring at pipeline will allow all stages to access this cvariable
