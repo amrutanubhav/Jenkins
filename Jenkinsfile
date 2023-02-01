@@ -34,7 +34,10 @@ pipeline {
     triggers { cron('H */4 * * 1-5') }
     
     stages {
-        stage('One') {     
+        stage('One') {    
+            //  when { 
+            //     branch 'develop' 
+            //     }
             steps {
                 echo "stage one"
                 echo "environment url is ${ENV_URL}"
