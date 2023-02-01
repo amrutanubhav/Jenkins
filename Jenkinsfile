@@ -15,7 +15,7 @@ pipeline {
     }
 
     tools {
-        maven 'apache-maven-3.0.1'             // tools must be predefined in manage jenkins : maven jdk gradel
+        maven 'apache-maven-381'             // tools must be predefined in manage jenkins : maven jdk gradel
 
     }
 
@@ -42,6 +42,7 @@ pipeline {
             steps {
                 echo "stage one"
                 echo "environment url is ${ENV_URL}"
+                sh "mvn --version"
             }
         }
 
