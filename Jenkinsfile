@@ -55,7 +55,7 @@ pipeline {
                 echo "environment url is ${ENV_URL}"
                 sh "mvn --version"
                 sh "hostname"
-                sh "sleep 300"
+                // sh "sleep 300"
             }
         }
 
@@ -66,7 +66,7 @@ pipeline {
             steps {
                 echo "stage two"
                 echo "environment url is ${ENV_URL}"
-                sh "sleep 300"
+                // sh "sleep 300"
             }
         }
 
@@ -78,7 +78,6 @@ pipeline {
                   echo hi world
                   echo bye world
                   env
-                  sleep 300
 
                 '''
             }
